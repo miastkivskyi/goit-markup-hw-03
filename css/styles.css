@@ -23,7 +23,10 @@ body {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
+
 p,
 h1,
 h2,
@@ -92,6 +95,15 @@ ol {
 }
 
 /*main*/
+.section-team,
+.section-examples {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section-features {
+  padding-top: 94px;
+}
+
 .section-title {
   color: var(--section-title-color);
   font-weight: 700;
@@ -99,19 +111,21 @@ ol {
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
+
 .hero {
   background-color: var(--background-color);
+  text-align: center;
 }
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   text-transform: uppercase;
-  margin-bottom: 100;
+  padding-top: 200px;
 }
 .section-work {
   color: var(--section-title-color);
@@ -120,6 +134,7 @@ ol {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .rubric {
@@ -127,8 +142,9 @@ ol {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
-.team-section {
-  background: var(--button-basis);
+
+.section-team {
+  background-color: var(--button-basis);
 }
 .staff {
   background-color: var(--primary-white-color);
@@ -181,6 +197,8 @@ ol {
 
 .footer {
   background: var(--background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-white {
   color: var(--primary-white-color);
@@ -218,7 +236,6 @@ ol {
 .button-studio {
   color: var(--primary-white-color);
   background-color: var(--button-back-color);
-  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
@@ -227,6 +244,8 @@ ol {
   box-shadow: 0px 4px 4px var(--shadow-color);
   border-radius: 4px;
   letter-spacing: 0.06em;
+  margin-top: 30px;
+  margin-bottom: 200px;
 }
 
 .button-portfolio {
