@@ -311,11 +311,8 @@ img {
   color: var(--logo-color);
 }
 
-.footer-nav .item {
+.footer-nav .item:not(:last-child) {
   margin-bottom: 9px;
-}
-.footer-nav .item :not(:last-child) {
-  margin-bottom: 0px;
 }
 
 /*button*/
@@ -398,7 +395,7 @@ img {
 }
 
 .section-name {
-  margin-right: 30px;
+  margin-right: 0px;
 }
 
 .section-name :not(:last-child) {
@@ -406,7 +403,7 @@ img {
 }
 
 .profession {
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .staff {
