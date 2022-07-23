@@ -43,9 +43,14 @@ ol {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /*site nav*/
+.header {
+  border: 1px solid #ececec;
+}
 .header-nav {
   font-family: "Roboto";
   font-weight: 500;
@@ -71,12 +76,24 @@ img {
   line-height: 1.2;
   color: var(--logo-color);
 }
-
+.header-nav {
+  display: flex;
+}
 .site-nav {
   display: flex;
   margin-left: 93px;
 }
+.header-con {
+  display: flex;
+  align-items: center;
+}
+.contacts-nav {
+  display: flex;
+}
 
+.header-connect {
+  margin-left: auto;
+}
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
 }
@@ -98,11 +115,9 @@ img {
 }
 
 .header-nav {
-  display: flex;
   align-items: center;
 }
 .contacts-nav {
-  display: flex;
   margin-left: auto;
 }
 
@@ -116,6 +131,8 @@ img {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contacts-nav .data:hover,
@@ -150,6 +167,8 @@ img {
 .hero {
   background-color: var(--background-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   font-weight: 900;
@@ -158,9 +177,9 @@ img {
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   text-transform: uppercase;
-  padding-top: 200px;
   width: 696px;
   display: inline-block;
+  margin-bottom: 30px;
 }
 .section-work {
   color: var(--section-title-color);
@@ -196,6 +215,8 @@ img {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-right: 0;
+  margin-bottom: 10px;
 }
 .profession {
   color: var(--primary-text-color);
@@ -203,6 +224,7 @@ img {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 0px;
 }
 
 /*Portfolio*/
@@ -217,7 +239,8 @@ img {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.9;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
 }
 .additional {
   margin-bottom: 50px;
@@ -288,6 +311,13 @@ img {
   color: var(--logo-color);
 }
 
+.footer-nav .item {
+  margin-bottom: 9px;
+}
+.footer-nav .item :not(:last-child) {
+  margin-bottom: 0px;
+}
+
 /*button*/
 
 .button-studio {
@@ -302,7 +332,10 @@ img {
   border-radius: 4px;
   letter-spacing: 0.06em;
   display: block;
-  margin-top: 30px;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -361,10 +394,7 @@ img {
   padding-left: 24px;
   padding-right: 24px;
   border: 1px solid #eeeeee;
-}
-
-.section-paragraph {
-  margin-top: 4px;
+  border-top: none;
 }
 
 .section-name {
@@ -382,12 +412,10 @@ img {
 .staff {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
 }
 
 .staff .employees {
-  flex-basis: calc(100% / 4 - 90px);
-  margin-right: 30px;
+  width: calc(1200 / 4 - 30px);
 }
 
 .staff .employees:not(:last-child) {
